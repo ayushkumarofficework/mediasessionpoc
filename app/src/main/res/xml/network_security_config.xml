@@ -1,0 +1,42 @@
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">robi-prod.mife-aoc.com</domain>
+        <domain includeSubdomains="true">robi.mife-aoc.com</domain>
+        <domain includeSubdomains="true">login.mondiamediamena.com</domain>
+        <domain includeSubdomains="true">msisdn.sla-alacrity.com</domain>
+        <domain includeSubdomains="true">prod.mife-aoc.com</domain>
+        <domain includeSubdomains="true">digitalauthentication.om</domain>
+        <domain includeSubdomains="true">msisdn.mife-aoc.com</domain>
+        <domain includeSubdomains="true">helm.tekmob.com</domain>
+        <domain includeSubdomains="true">antifraud.empello.net</domain>
+        <domain includeSubdomains="true">onmopay.onmobilespace.com </domain>
+        <domain includeSubdomains="true">secure-payment.ae</domain>
+        <domain includeSubdomains="true">analytics-ae-du.securewebfraud.io</domain>
+        <domain includeSubdomains="true">web-ae-du.secure-d.io</domain>
+        <domain includeSubdomains="true">googletagservices.com</domain>
+    </domain-config>
+    <!--    <domain-config cleartextTrafficPermitted="false">-->
+    <!--        <domain includeSubdomains="true">sonyliv.com</domain>-->
+    <!--        <pin-set>-->
+    <!--            <pin digest="SHA-256">FI3VUkf7IOzGNRcf/ac5MwYD0eYwD9Vn5BnqXySQvB8=</pin>-->
+    <!--            <pin digest="SHA-256">5kJvNEMw0KjrCAu7eXY5HZdvyCS13BbA0VJG1RSP91w=</pin>-->
+    <!--            <pin digest="SHA-256">r/mIkG3eEpVdm+u/ko/cwxzOMo1bk4TyHIlByibiA5E=</pin>-->
+    <!--            &lt;!&ndash; below pin is for streaming.sonyliv.com           &ndash;&gt;-->
+    <!--            <pin digest="SHA-256">zVM6bc6ueUrBFyE9xEBYCCDo0BsmHydOqUuqA+YQmyE=</pin>-->
+    <!--            &lt;!&ndash; below are the new keys for streaming.sonyliv.com&ndash;&gt;-->
+    <!--            <pin digest="SHA-256">ZnXQt77ZFnyoLohTA/p8Lp/GagcrtWCey2ZpFgmPU6w=</pin>-->
+    <!--            <pin digest="SHA-256">jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0=</pin>-->
+    <!--            <pin digest="SHA-256">C5+lpZ7tcVwmwQIMcRtPbsQtWLABXhQzejna0wHFr8M=</pin>-->
+    <!--        </pin-set>-->
+    <!--    </domain-config>-->
+    <debug-overrides>
+        <trust-anchors>
+            <certificates src="user" />
+        </trust-anchors>
+    </debug-overrides>
+</network-security-config>
